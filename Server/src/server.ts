@@ -15,6 +15,10 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Hello, From the Server");
 });
 
+app.get("/profile", (req: Request, res: Response) => {
+  res.send("Hello, From the profile page");
+});
+
 app.listen(PORT, () => {
   log(`Server running on port ${PORT}`);
 });
